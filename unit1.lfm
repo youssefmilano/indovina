@@ -1,0 +1,77 @@
+object IndovinaNumero: TIndovinaNumero
+  Left = 330
+  Height = 231
+  Top = 218
+  Width = 377
+  Caption = 'IndovinaNumero'
+  ClientHeight = 231
+  ClientWidth = 377
+  Color = clSilver
+  OnCreate = FormCreate
+  LCLVersion = '3.6.0.0'
+  object Label1: TLabel
+    Left = 4
+    Height = 25
+    Top = 24
+    Width = 373
+    Caption = 'Ho pensato un numero da 1 a 100. Quale?'
+    Color = clGray
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object EditNumero: TEdit
+    Left = 16
+    Height = 23
+    Top = 72
+    Width = 104
+    TabOrder = 0
+  end
+  object ButtonProva: TButton
+    Left = 132
+    Height = 42
+    Top = 62
+    Width = 124
+    Caption = 'Prova'
+    Font.CharSet = ANSI_CHARSET
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = ButtonProvaClick
+  end
+  object ButtonNuova: TButton
+    Left = 64
+    Height = 57
+    Top = 160
+    Width = 144
+    Caption = 'Nuova partita'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = ButtonNuovaClick
+  end
+  object LabelRisposta: TLabel
+    Left = 26
+    Height = 1
+    Top = 116
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+end
